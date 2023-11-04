@@ -1,1 +1,1 @@
-#WiE Hackathon ~ FOOD4KIDS Waterloo Region
+WiE Hackathon ~ FOOD4KIDS Waterloo Region
