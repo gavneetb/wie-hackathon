@@ -1,38 +1,65 @@
 .App {
-  text-align: center;
+margin-top: 50px;
+margin-left: 50px;
+margin-right: 50px;
+margin-bottom: 50px;
+
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  width: 418px;
+  height: 104px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.subheader {
+  color: #454B60;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
+
+.app-sub {
+  justify-content: center;
+  display: grid;
+  display: flex; /* This will define a flex container */
+  align-items: center; /* This will vertically align the flex items in the middle */
+  column-gap: 15px;
+}
+
+.volume {
+  width: 40px;
+  height: 40px;
+}
+
+.class-profile {
+  justify-content: center;
+  display: grid;
+  display: flex; /* This will define a flex container */
+  align-items: center; /* This will vertically align the flex items in the middle */
+  column-gap: 15px;
+}
+
+.giraffe-profile {
+  width: 260px;
+  height: 246px;
+}
+
+.grade-button {
+  border-radius: 42px;
+  background: #FFF;
+  box-shadow: 4px 4px 15px 0px #C3C3C3 inset, -6px -4px 15px 0px #FFF inset;
+  width: 264px;
+  height: 68px;
+  flex-shrink: 0;
+} 
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color:white;
+
 }
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

@@ -1,23 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./images/logo.png";
+import volume from "./images/volume.png";
+import giraffe from "./images/giraffe.png";
+
+import "./App.css";
 
 function App() {
+  const handleClick = () => {
+    console.log("Button was clicked!");
+    // Perform some action on click
+  };
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+      <div className="app-sub">
+        <p className="subheader">Hello! What grade are you in?</p>
+        <img src={volume} className="volume" alt="volumebutton" />
+      </div>
+      <div className="class-profile">
+        <div>
+          <img src={giraffe} className="giraffe-profile" alt="profile" />
+          <div className="grade-selection">
+            <button className="grade-button" onClick={handleClick}>Kindergarten - Grade One</button>
+          </div>
+        </div>
+        <div>
+          <img src={giraffe} className="giraffe-profile" alt="profile" />
+          <div className="grade-selection">
+            <button className="grade-button" onClick={handleClick}>Grade Two - Grade Five</button>
+          </div>{" "}
+        </div>
+        <div>
+          <img src={giraffe} className="giraffe-profile" alt="profile" />
+          <div className="grade-selection">
+            <button className="grade-button" onClick={handleClick}>Grade Six - Grade Eight</button>
+          </div>{" "}
+        </div>
+      </div>
     </div>
   );
 }
